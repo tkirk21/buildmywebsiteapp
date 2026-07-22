@@ -100,7 +100,7 @@
     .nav-button:hover { background: #072d6c; transform: translateY(-2px); }
     .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
     .nav-links a { text-decoration: none; color: #222; font-size: 17px; font-weight: 600; transition: color 0.3s; }
-    .nav-links a:hover { color: #0b3d91; }    
+    .nav-links a:hover, .nav-links a.active { color: #0b3d91; }  
 
     @media (max-width: 768px) {
         nav { padding: 15px 20px; flex-direction: column; gap: 15px; }
