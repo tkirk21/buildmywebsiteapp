@@ -10,7 +10,10 @@
 
 /* Navigation */
     nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 60px; background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-    .logo h2 { color: #c8102e; font-size: 28px; font-weight: 800; }
+    .logo { display: flex; align-items: center; }
+    .logo a { display: flex; align-items: center; text-decoration: none; gap: 14px; }
+    .logo img { height: 60px; width: auto; }
+    .logo span { color: #c8102e; font-size: 28px; font-weight: 800; }
     .nav-links { display: flex; align-items: center; gap: 30px; }
     .nav-links a { color: #222; font-size: 17px; font-weight: 600; transition: 0.3s; }
     .nav-links a:hover { color: #c8102e; }
@@ -19,6 +22,8 @@
 
     @media (max-width: 768px) {
       nav { padding: 15px 20px; flex-direction: column; gap: 15px; }
+      .logo img { height: 50px; }
+      .logo span { font-size: 22px; text-align: center; }
       .nav-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
       .join-button { width: 100%; text-align: center; }
     }
@@ -89,4 +94,25 @@
     }
 
 /* Footer */
-    footer { padding: 24px; background: #111; color: white; text-align: center; }
+    footer { padding: 50px 80px 20px; background: #111; color: white; }
+    footer a { color: white; text-decoration: none; }
+    footer h3 { font-size: 28px; margin-bottom: 10px; }
+    footer h4 { margin-bottom: 15px; color: #c8102e; }
+    footer p { color: rgba(255,255,255,0.8); margin-bottom: 8px; }
+    footer ul { list-style: none; }
+    footer li { margin-bottom: 10px; }
+
+    .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; max-width: 1300px; margin: 0 auto; }
+
+    .footer-brand { display: flex; align-items: center; gap: 20px; }
+
+    .footer-logo { width: 80px; }
+
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.15); margin-top: 40px; padding-top: 20px; text-align: center; }
+
+    @media (max-width:768px) {
+      footer { padding: 40px 20px 20px; }
+      .footer-content { grid-template-columns: 1fr; gap: 35px; text-align: center; }
+      .footer-brand { flex-direction: column; }
+      .footer-logo { width: 70px; }
+    }
