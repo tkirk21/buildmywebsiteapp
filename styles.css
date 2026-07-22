@@ -5,7 +5,7 @@
     body { font-family: Arial, Helvetica, sans-serif; background: #f8f9fb; color: #222; line-height: 1.6; }
 
 /* Contact */
-    .founder
+    .contact { padding: 70px 80px; background: #f8f9fb; }
     .contact-form { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
     .contact-form input,
     .contact-form textarea { width: 100%; padding: 18px; border: 1px solid #ddd; border-radius: 10px; font-size: 17px; font-family: Arial, Helvetica, sans-serif; transition: 0.3s; }
@@ -15,7 +15,7 @@
     .contact-form button:hover { background: #072d6c; box-shadow: 0 8px 20px rgba(11,61,145,0.25); transform: translateY(-2px); }
 
     @media (max-width: 768px) {
-      .contact { padding: 40px 80px 70px; background: #f8f9fb; }
+      .contact { padding: 50px 20px; background: #f8f9fb; }
       .contact-form { gap: 18px; }
       .contact-form input, .contact-form textarea { padding: 16px; font-size: 16px; }
       .contact-form button { width: 100%; padding: 16px; font-size: 17px; }
