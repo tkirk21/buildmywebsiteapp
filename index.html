@@ -11,15 +11,18 @@
 
     gtag('config', 'G-9DX1GBQCQR');
   </script>
-
+  
+  <meta property="og:title" content="Build My Website App | Websites & Apps for Clubs, Restaurants & Small Businesses">
+  <meta property="og:description" content="Professional websites and custom mobile apps for small businesses, restaurants, bars, and sports clubs.">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.buildmywebsiteapp.com">
   <meta property="og:image" content="https://www.buildmywebsiteapp.com/assets/og-preview.png">
 
+  <meta name="description" content="Professional websites and custom mobile apps for small businesses, restaurants, bars, and sports clubs. Get a free homepage mockup with no obligation.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Build My Website App | Websites & Apps for Clubs, Restaurants & Small Businesses">
   <meta name="twitter:description" content="Professional websites and custom mobile apps for sports clubs, restaurants, bars, and small businesses.">
   <meta name="twitter:image" content="https://www.buildmywebsiteapp.com/assets/og-preview.png">
-
   <meta name="author" content="Build My Website App">
   <meta name="theme-color" content="#0b2c5d">
 
@@ -34,6 +37,18 @@
   <link rel="apple-touch-icon" href="favicon.png">
 
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Build My Website App",
+    "url": "https://www.buildmywebsiteapp.com",
+    "image": "https://www.buildmywebsiteapp.com/assets/og-preview.png",
+    "description": "Professional websites and custom mobile apps for small businesses, restaurants, bars, and sports clubs.",
+    "areaServed": "Worldwide",
+    "priceRange": "$299-$6999+"
+  }
+  </script>
 </head>
 
 <body>
@@ -231,7 +246,7 @@
 
       <div class="portfolio-grid">
         <div class="portfolio-card">
-          <img src="assets/my_sports_passport_website.png" alt="My Sports Passport website screenshot" class="portfolio-image">
+          <img src="assets/my_sports_passport_website.png" alt="My Sports Passport website screenshot" class="portfolio-image" loading="lazy">
           <h3>My Sports Passport</h3>
           <p>
             A professional website showcasing our sports apps, features, and download links for the App Store and Google Play.
@@ -251,7 +266,7 @@
 
       <div class="portfolio-grid">
         <div class="portfolio-card">
-          <img src="assets/my_hockey_passport.png" alt="My Hockey Passport logo" class="portfolio-image portfolio-image-logo">
+          <img src="assets/my_hockey_passport.png" alt="My Hockey Passport logo" class="portfolio-image portfolio-image-logo" loading="lazy">
           <h3>My Hockey Passport</h3>
           <p>
             Track every hockey arena you've visited, check in live, collect photos, connect with friends, and build your hockey journey.
@@ -260,8 +275,7 @@
         </div>
 
         <div class="portfolio-card">
-          <img src="assets/my_baseball_passport.png" alt="My Baseball Passport logo" class="portfolio-image portfolio-image-logo">
-          <h3>My Baseball Passport</h3>
+         <img src="assets/my_baseball_passport.png" alt="My Baseball Passport logo" class="portfolio-image portfolio-image-logo" loading="lazy">  <h3>My Baseball Passport</h3>
           <p>
             Keep track of every baseball stadium you've visited, check in at games, and share your baseball experiences.
           </p>
@@ -269,7 +283,7 @@
         </div>
 
         <div class="portfolio-card">
-          <img src="assets/my_footy_passport.png" alt="My Footy Passport logo" class="portfolio-image portfolio-image-logo">
+          <img src="assets/my_footy_passport.png" alt="My Footy Passport logo" class="portfolio-image portfolio-image-logo" loading="lazy">
           <h3>My Footy Passport</h3>
           <p>
             Check in at Australian football grounds, track your matches, and connect with other footy fans.
@@ -327,46 +341,58 @@
         class="contact-form"
         action="https://formspree.io/f/meeyzgwy"
         method="POST"
-        >
-        <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-        >
+      >
+      <label for="name" class="sr-only">Your Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      >
 
-        <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-        >
+      <label for="email" class="sr-only">Your Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      >
 
-        <input
-            type="text"
-            name="business"
-            placeholder="Business Name"
-        >
+      <label for="business" class="sr-only">Business Name</label>
+      <input
+        type="text"
+        id="business"
+        name="business"
+        placeholder="Business Name"
+      >
 
-        <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-        >
+      <label for="phone" class="sr-only">Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Phone Number"
+      >
 
-        <textarea
-            name="message"
-            placeholder="Tell me about your business and what you'd like built."
-            required
-        ></textarea>
+      <label for="message" class="sr-only">Your Message</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Tell me about your business and what you'd like built."
+        required
+      ></textarea>
 
-        <button
-            type="submit"
-            class="primary-button"
-        >
-            Request My Free Mockup
-        </button>
-        </form>
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+      <button
+        type="submit"
+        class="primary-button"
+      >
+        Request My Free Mockup
+      </button>
+    </form>
     </section>
   </main>
     
