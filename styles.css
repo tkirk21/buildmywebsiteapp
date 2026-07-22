@@ -14,6 +14,13 @@
     .contact-form button { border: none; cursor: pointer; padding: 18px 36px; border-radius: 10px; font-size: 18px; font-weight: 700; background: #0b3d91; color: white; transition: 0.3s; }
     .contact-form button:hover { background: #072d6c; box-shadow: 0 8px 20px rgba(11,61,145,0.25); transform: translateY(-2px); }
 
+    @media (max-width: 768px) {
+      .contact { padding: 50px 20px; }
+      .contact-form { gap: 18px; }
+      .contact-form input, .contact-form textarea { padding: 16px; font-size: 16px; }
+      .contact-form button { width: 100%; padding: 16px; font-size: 17px; }
+    }
+
 /* Footer */
     footer { padding: 20px 20px 12px; background: #0b3d91; color: white; text-align: center; }
     footer a { color: white; text-decoration: none; opacity: 0.9; transition: 0.3s; }
@@ -33,15 +40,26 @@
     
 
     @media (max-width: 768px) {
-    footer { padding: 16px 20px 10px; }
-    .footer-content { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 40px; max-width: 1200px; margin: 0 auto; text-align: left; align-items: start; }
-  }
+      footer { padding: 20px; }
+      .footer-content { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+      .footer-brand { justify-content: center; }
+      .footer-content p { max-width: 100%; text-align: center; }
+      footer h3 { text-align: center; }
+      .footer-content .primary-button { width: 100%; }
+      .footer-logo { height: 60px; margin: 0 auto; }
+      .footer-bottom { margin-top: 20px; }
+    }
 
 /* Founder */
     .founder { padding: 70px 80px; background: #f8f9fb; }
     .founder-content { max-width: 750px; margin: 0 auto; }
     .founder-content p { color: #444; font-size: 17px; margin-bottom: 20px; }  
     
+    @media (max-width: 768px) {
+      .founder { padding: 50px 20px; }
+      .founder-content { max-width: 100%; }
+      .founder-content p { font-size: 16px; }
+    }
 
 /* Hero */
     .hero { display: grid; grid-template-columns: 48% 52%; align-items: center; min-height: 510px; padding: 50px 60px 20px; background: linear-gradient(135deg, #0b3d91 0%, #1565c0 100%); overflow: hidden; }
@@ -57,6 +75,18 @@
     .primary-button:hover { transform: translateY(-3px); }
     .secondary-button { border: 2px solid #ffffff; color: #ffffff; }
     .secondary-button:hover { background: rgba(255,255,255,0.12); transform: translateY(-3px); }
+    
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; padding: 40px 20px; text-align: center; gap: 30px; }
+      .hero-content { max-width: 100%; text-align: center; }
+      .hero h1 { font-size: 42px; }
+      .hero p { max-width: 100%; font-size: 20px; margin: 0 auto 24px; }
+      .hero-buttons { width: 100%; }
+      .hero-buttons-row { flex-direction: column; width: 100%; gap: 12px; }
+      .hero-image { order: -1; }
+      .hero-image img { width: 100%; max-width: 350px; }
+      .primary-button, .secondary-button { width: 100%; min-width: 0; }
+    }
 
 /* Navigation */
     nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 60px; background: white; box-shadow: 0 2px 15px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
@@ -72,6 +102,17 @@
     .nav-links a { text-decoration: none; color: #222; font-size: 17px; font-weight: 600; transition: color 0.3s; }
     .nav-links a:hover { color: #0b3d91; }    
 
+    @media (max-width: 768px) {
+        nav { padding: 15px 20px; flex-direction: column; gap: 15px; }
+        .logo { justify-content: center; }
+        .logo img { height: 50px; }
+        .logo-line1 { font-size: 18px; }
+        .logo-line2 { font-size: 18px; }
+        .nav-links { flex-wrap: wrap; justify-content: center; gap: 16px; width: 100%; }
+        .nav-links a { font-size: 16px; }
+        .nav-button { width: 100%; text-align: center; }
+    }
+
 /* Portfolio */
     .portfolio { padding: 70px 80px; background: white; }
     .portfolio-card { background: #f8f9fb; padding: 40px; border-radius: 18px; box-shadow: 0 12px 35px rgba(0,0,0,0.08); display: flex; flex-direction: column; height: 100%; transition: 0.3s; text-align: center; }
@@ -82,6 +123,17 @@
     .portfolio-image-placeholder { width: 100%; height: 160px; background: #e2e6ed; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #888; font-size: 14px; margin-bottom: 20px; }
     .portfolio-image { width: 100%; max-height: 220px; object-fit: contain; background: #f0f2f5; border-radius: 12px; margin-bottom: 20px; display: block; }
     .portfolio-image-logo { height: 160px; width: auto; margin: 0 auto 20px; object-fit: contain; }
+
+    @media (max-width: 768px) {
+      .portfolio { padding: 50px 20px; }
+      .portfolio-grid { grid-template-columns: 1fr; gap: 25px; }
+      .portfolio-card { padding: 25px; }
+      .portfolio-card h3 { font-size: 24px; }
+      .portfolio-card p { font-size: 16px; }
+      .portfolio-image { max-height: 180px; }
+      .portfolio-image-logo { height: 120px; }
+      .portfolio-card .secondary-button { width: 100%; min-width: 0; }
+    }
 
 /* Portfolio Buttons */
     .portfolio-card .secondary-button { color: #0b3d91; border: 2px solid #0b3d91; margin-top: auto; padding: 14px 30px; font-size: 16px; min-width: 200px; align-self: center; }
@@ -104,6 +156,16 @@
     .service-card ul { list-style: none; }
     .service-card li { margin-bottom: 6px; color: #444; font-size: 13px; }
     .subsection-heading { text-align: center; font-size: 28px; font-weight: 800; color: #0b3d91; margin: 50px 0 30px; }
+
+    @media (max-width: 768px) {
+      .services { padding: 0 20px 50px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .section-heading { margin-bottom: 30px; }
+      .section-heading h2 { font-size: 36px; }
+      .section-heading p { font-size: 18px; }
+      .subsection-heading { font-size: 24px; margin: 40px 0 25px; }
+      .service-card { padding: 20px; }
+    }
 
 /* Thank You */
     .thank-you { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 100px 20px; background: #f8f9fb; }
