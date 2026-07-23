@@ -4,204 +4,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo Football Club | Matchday Programme</title>
+  <title>Demo Football Club | Club Dashboard</title>
   <meta name="description" content="Demo Football Club is a welcoming Australian Rules Football club for players of all experience levels. Join us for training every Tuesday and Thursday.">
   <meta name="keywords" content="Australian Rules Football, AFL, Football Club, Demo Football Club, Community Sport">
-  <meta name="theme-color" content="#14171c">
+  <meta name="theme-color" content="#0b2a55">
 
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-  <header>
-    <nav>
+  <div class="app-shell">
 
-      <div class="logo">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
         <a href="#hero">
           <img src="assets/logo.png" alt="Demo Football Club Logo">
           <span>Demo F.C.</span>
         </a>
       </div>
 
-      <ul class="nav-links">
-        <li><a href="#hero"><em>01</em>Home</a></li>
-        <li><a href="#about"><em>02</em>About</a></li>
-        <li><a href="#training"><em>03</em>Training</a></li>
-        <li><a href="#sponsors"><em>04</em>Sponsors</a></li>
-        <li><a href="#join"><em>05</em>Join</a></li>
-      </ul>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#join">Join</a></li>
+        </ul>
+      </nav>
 
       <a href="#join" class="join-button">Join Now</a>
+    </aside>
 
-    </nav>
-  </header>
+    <main class="dashboard">
 
-  <main>
+      <div class="grid">
 
-    <section id="hero">
-      <div class="hero-inner">
-        <p class="hero-eyebrow">Round 1 &middot; Est. 1968 &middot; Demo Oval</p>
-        <h1>DEMO<br>FOOTBALL<br>CLUB</h1>
-        <p class="hero-dek">A community Australian Rules Football club for players of every age and skill level &mdash; new or seasoned, we've got a spot on the list for you.</p>
+        <section id="hero" class="card hero-card">
+          <p class="eyebrow">Demo Oval &middot; Est. 1968</p>
+          <h1>Welcome to Demo Football Club</h1>
+          <p class="hero-copy">
+            A community-focused Australian Rules Football club welcoming players of all ages and skill levels. Whether you're new to the game or an experienced footballer, we'd love to have you join us.
+          </p>
+          <div class="hero-buttons">
+            <a href="#join" class="primary-button">Join the Club</a>
+            <a href="#training" class="secondary-button">Training Times</a>
+          </div>
+        </section>
 
-        <div class="hero-buttons">
-          <a href="#join" class="primary-button">Join the Club</a>
-          <a href="#training" class="secondary-button">Training Times</a>
-        </div>
-      </div>
-    </section>
+        <section class="card stat-card">
+          <h3>1968</h3>
+          <p>Club founded</p>
+        </section>
 
-    <section class="scoreboard">
-      <div class="scoreboard-tile">
-        <span class="digits">1968</span>
-        <span class="label">Founded</span>
-      </div>
-      <div class="scoreboard-tile">
-        <span class="digits">Sen.</span>
-        <span class="label">Men's Football</span>
-      </div>
-      <div class="scoreboard-tile">
-        <span class="digits">Tue&nbsp;/&nbsp;Thu</span>
-        <span class="label">Training Nights</span>
-      </div>
-      <div class="scoreboard-tile">
-        <span class="digits">Open</span>
-        <span class="label">New Players</span>
-      </div>
-    </section>
+        <section class="card stat-card">
+          <h3>Senior Men's</h3>
+          <p>Competitive football</p>
+        </section>
 
-    <section id="about">
-      <div class="section-heading">
-        <span class="section-tag">02 &mdash; The Club</span>
-        <h2>About the Club</h2>
-      </div>
+        <section class="card stat-card">
+          <h3>Tue &amp; Thu</h3>
+          <p>Training nights</p>
+        </section>
 
-      <div class="about-content">
-        <div class="about-image">
-          <img src="assets/ground.jpg" alt="Demo Football Club Ground">
-          <span class="frame-tag">Demo Oval</span>
-        </div>
+        <section class="card stat-card">
+          <h3>Open</h3>
+          <p>New players welcome</p>
+        </section>
 
-        <div class="about-text">
-          <p class="drop-cap">
+        <section id="about" class="card about-card">
+          <span class="card-label">About the Club</span>
+          <img src="assets/ground.jpg" alt="Demo Football Club Ground" class="card-image">
+          <p>
             Demo Football Club is a welcoming Australian Rules Football club committed to developing players, building friendships, and creating a strong community on and off the field.
           </p>
-
           <p>
             We welcome players of all experience levels, from complete beginners to experienced footballers looking for a new club.
           </p>
+        </section>
 
-          <p class="pull-quote">&ldquo;Teamwork, sportsmanship, and a fair go for everyone on the field.&rdquo;</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="training">
-      <div class="section-heading">
-        <span class="section-tag">03 &mdash; Sessions</span>
-        <h2>Training</h2>
-      </div>
-
-      <div class="training-content">
-        <div class="training-image">
-          <img src="assets/training.jpg" alt="Training at Demo Football Club">
-          <span class="frame-tag">Tue &amp; Thu</span>
-        </div>
-
-        <div class="training-text">
+        <section id="training" class="card training-card">
+          <span class="card-label">Training</span>
           <h3>Come Train With Us</h3>
           <p>Everyone is welcome, regardless of experience.</p>
 
-          <dl class="session-list">
-            <div><dt>Days</dt><dd>Tuesday &amp; Thursday</dd></div>
-            <div><dt>Time</dt><dd>6:00 PM &ndash; 8:00 PM</dd></div>
-            <div><dt>Location</dt><dd>Demo Oval</dd></div>
-          </dl>
+          <ul class="detail-list">
+            <li><span>Days</span>Tuesday &amp; Thursday</li>
+            <li><span>Time</span>6:00 PM &ndash; 8:00 PM</li>
+            <li><span>Location</span>Demo Oval</li>
+          </ul>
 
+          <img src="assets/training.jpg" alt="Training at Demo Football Club" class="card-image">
           <a href="#join" class="primary-button">Get Started</a>
+        </section>
+
+        <section id="sponsors" class="card sponsors-card">
+          <span class="card-label">Our Sponsors</span>
+          <div class="sponsors-row">
+            <div class="sponsor-tile"><img src="assets/sponsor1.png" alt="Sponsor 1"></div>
+            <div class="sponsor-tile"><img src="assets/sponsor2.png" alt="Sponsor 2"></div>
+            <div class="sponsor-tile"><img src="assets/sponsor3.png" alt="Sponsor 3"></div>
+            <div class="sponsor-tile"><img src="assets/sponsor4.png" alt="Sponsor 4"></div>
+          </div>
+        </section>
+
+        <section id="join" class="card join-card">
+          <h2>Ready to Join Demo Football Club?</h2>
+          <p>
+            New players are always welcome. Whether you've played for years or have never picked up a football, we'd love to see you at training.
+          </p>
+          <a href="mailto:demos@demofootballclub.com" class="primary-button">Join Now</a>
+        </section>
+
+      </div>
+
+      <footer>
+        <div class="footer-bar">
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Demo Football Club Logo">
+            <span>Demo Football Club</span>
+          </div>
+
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#join">Join</a></li>
+          </ul>
+
+          <div class="footer-contact">
+            <p>Demo Oval &middot; Tue &amp; Thu &middot; 6&ndash;8 PM</p>
+            <p><a href="mailto:demos@demofootballclub.com">demos@demofootballclub.com</a></p>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section id="sponsors">
-      <div class="section-heading">
-        <span class="section-tag">04 &mdash; Backing the Club</span>
-        <h2>Our Sponsors</h2>
-      </div>
-
-      <div class="sponsors-strip">
-        <div class="sponsor-card">
-          <img src="assets/sponsor1.png" alt="Sponsor 1">
+        <div class="footer-bottom">
+          <p>&copy; 2026 Demo Football Club. Website created by <a href="https://buildmywebsiteapp.com">Build My Website App</a>.</p>
         </div>
-        <div class="sponsor-card">
-          <img src="assets/sponsor2.png" alt="Sponsor 2">
-        </div>
-        <div class="sponsor-card">
-          <img src="assets/sponsor3.png" alt="Sponsor 3">
-        </div>
-        <div class="sponsor-card">
-          <img src="assets/sponsor4.png" alt="Sponsor 4">
-        </div>
-      </div>
-    </section>
+      </footer>
 
-    <section id="join">
-      <div class="join-content">
-        <p class="section-tag light">05 &mdash; Get Involved</p>
-        <h2>Ready to Join<br>Demo Football Club?</h2>
-        <p>
-          New players are always welcome. Whether you've played for years or have never picked up a football, we'd love to see you at training.
-        </p>
-        <a href="mailto:demos@demofootballclub.com" class="primary-button">Join Now</a>
-      </div>
-    </section>
+    </main>
 
-  </main>
-
-  <footer>
-    <div class="footer-content">
-
-      <div class="footer-brand">
-        <img src="assets/logo.png" alt="Demo Football Club Logo" class="footer-logo">
-        <div>
-          <h3>Demo F.C.</h3>
-          <p>Building players. Building community.</p>
-        </div>
-      </div>
-
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#training">Training</a></li>
-          <li><a href="#join">Join</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contact</h4>
-        <p>Demo Oval</p>
-        <p>Tuesday &amp; Thursday</p>
-        <p>6:00 PM &ndash; 8:00 PM</p>
-        <p>demos@demofootballclub.com</p>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Demo Football Club. Website created by <a href="https://buildmywebsiteapp.com">Build My Website App</a>.</p>
-    </div>
-  </footer>
+  </div>
 
   <script src="js/script.js"></script>
 
 </body>
 </html>
+
