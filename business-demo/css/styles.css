@@ -37,19 +37,6 @@
     .secondary-button { border: 2px solid var(--paper); color: var(--paper); }
     .secondary-button:hover { background: var(--paper); color: var(--ink); }
 
-/* Coach */
-    .coach-content { display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 60px; align-items: center; border-top: 1px solid var(--line); padding-top: 50px; }
-    .coach-image { position: relative; border-radius: 50%; overflow: hidden; aspect-ratio: 1 / 1; border: 6px solid var(--ink); outline: 3px solid var(--gold); outline-offset: 6px; }
-    .coach-image img { width: 100%; height: 100%; object-fit: cover; }
-    .coach-number { position: absolute; bottom: 10px; right: 10px; background: var(--gold); color: var(--ink); font-family: var(--mono); font-weight: 700; font-size: 14px; padding: 6px 12px; border-radius: 50%; border: 2px solid var(--ink); }
-    .coach-text h3 { font-size: 32px; margin-bottom: 16px; color: var(--ink); }
-    .coach-text p { color: #2c2c2c; margin-bottom: 18px; }
-
-    @media (max-width: 900px) {
-      .coach-content { grid-template-columns: 1fr; gap: 30px; text-align: center; }
-      .coach-image { max-width: 260px; margin: 0 auto; }
-    }
-
 /* Footer */
     footer { padding: 60px 80px 24px; background: var(--ink); color: var(--paper); border-top: 3px solid var(--gold); }
     .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; max-width: 1300px; margin: 0 auto; }
@@ -158,5 +145,6 @@
       .training-content { grid-template-columns: 1fr; gap: 40px; }
       .training-image { transform: none; }
     }
+
 
     
