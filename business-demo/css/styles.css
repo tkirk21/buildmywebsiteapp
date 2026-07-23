@@ -105,6 +105,14 @@
     .join-overlay .primary-button:hover { background: var(--sky); border-color: var(--sky); color: var(--white); }
     .join-overlay .secondary-button { border-color: var(--white); color: var(--white); }
     .join-overlay .secondary-button:hover { background: var(--white); color: var(--navy); }
+    .join-form { max-width: 760px; margin: 40px auto 0; }
+    .join-form-row { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; margin-bottom: 18px; }
+    .join-form input, .join-form select, .join-form textarea { width: 100%; padding: 16px 18px; border: 1px solid rgba(255,255,255,.35); border-radius: 10px; background: rgba(255,255,255,.12); color: var(--white); font: inherit; }
+    .join-form input::placeholder, .join-form textarea::placeholder { color: rgba(255,255,255,.75); }
+    .join-form select { color: var(--white); }
+    .join-form option { color: var(--navy); }
+    .join-form textarea { min-height: 140px; resize: vertical; margin-bottom: 22px; }
+    .join-form .primary-button { width: 100%; max-width: 240px; }
 
     @media (max-width: 560px) {
       .join-card { grid-column: span 1; }
