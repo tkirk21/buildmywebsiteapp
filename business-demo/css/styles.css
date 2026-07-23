@@ -123,9 +123,10 @@
     .team-card img { width: 100%; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.15); }
     .team-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 30px; margin-top: 30px; }
     .team-grid-coaches { grid-template-columns: repeat(3,1fr); max-width: 900px; margin: 30px auto 0; }
-    .team-text p { margin: 0 auto 20px; max-width: 850px; text-align: center; }
-
-    @media (max-width: 768px) {
+    .team-text { max-width: 850px; margin: 0 auto 30px; }
+    .team-text p { margin: 0; text-align: center; }
+    
+@media (max-width: 768px) {
       .team-grid { grid-template-columns: repeat(2,1fr); gap: 20px; }
       .team-card h3 { font-size: 18px; }
     }    
